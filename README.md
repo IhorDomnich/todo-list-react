@@ -1,5 +1,7 @@
 # Tasks list
 
+![Add list](https://github.com/IhorDomnich/todo-list-react/blob/main/public/49192405.jpg)
+
 # Description
 
 This is a regular task sheet. In it, you can add a task, mark it as completed and also delete it.
