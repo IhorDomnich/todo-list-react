@@ -15,4 +15,8 @@ export const GlobalStyle = createGlobalStyle`
         word-break: break-word;
     }
 
+    #root {
+        background-color: ${({ theme }) => theme.color.silver};
+    }
+
 `;

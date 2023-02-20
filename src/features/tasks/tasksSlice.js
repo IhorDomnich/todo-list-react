@@ -49,7 +49,9 @@ export const {
     fetchExampleTasksError,
     fetchExampleTasksSuccess,
     setTasks,
-    setAllDone } = tasksSlice.actions;
+    setAllDone,
+    selectLoading,
+} = tasksSlice.actions;
 
 const selectTasksState = state => state.tasks;
 

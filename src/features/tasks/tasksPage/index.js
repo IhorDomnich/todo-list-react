@@ -7,8 +7,8 @@ import Header from "../../../common/Header";
 import Container from "../../../common/Container";
 import Search from './Search';
 
-
 function TasksPage() {
+
   return (
     <Container>
       <Header title="Tasks list" />
