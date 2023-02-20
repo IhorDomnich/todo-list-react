@@ -5,7 +5,6 @@ import Task from "./features/tasks/tasksPage/TaskPage";
 import {toAuthor, toTasks, toTask} from "./routes";
 import Navigation from "./Navigatoin";
 
-
 export default () => (
     <HashRouter>
        <Navigation />
