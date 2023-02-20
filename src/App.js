@@ -9,7 +9,6 @@ import Navigation from "./Navigatoin";
 export default () => (
     <HashRouter>
        <Navigation />
-
             <Switch>
                 <Route path={toTask()}>
                     <Task />

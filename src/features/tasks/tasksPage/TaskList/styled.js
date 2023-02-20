@@ -48,8 +48,8 @@ export const Button = styled.button`
     &:active  {
         filter: brightness(120%);
     }
-    
 `;
+
 export const StyledLink = styled(Link)`
     &.active, &:link, &:visited {
         text-decoration: none;

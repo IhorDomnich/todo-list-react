@@ -2,7 +2,6 @@ import { toAuthor, toTasks } from "../routes";
 import { List, Item, StyledNavLink } from "./styled";
 
 export default () => {
-    return (
         <nav>
             <List>
                 <Item>
@@ -13,5 +12,4 @@ export default () => {
                 </Item>
             </List>
         </nav>
-    );
 };
