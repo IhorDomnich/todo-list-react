@@ -13,5 +13,5 @@ export default () => {
                 </Item>
             </List>
         </nav>
-    )
+    );
 };
