@@ -17,6 +17,9 @@ export const GlobalStyle = createGlobalStyle`
 
     #root {
         background-color: ${({ theme }) => theme.color.silver};
+        min-height: 100vh;
+        background-size: cover;
+        background-position: center;
     }
 
 `;
