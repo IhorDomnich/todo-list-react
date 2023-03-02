@@ -3,7 +3,7 @@ import Author from "./features/author/AuthorPage";
 import Tasks from "./features/tasks/tasksPage";
 import Task from "./features/tasks/tasksPage/TaskPage";
 import {toAuthor, toTasks, toTask} from "./routes";
-import Navigation from "./Navigatoin";
+import Navigation from "./Navigation";
 
 export default () => (
     <HashRouter>
