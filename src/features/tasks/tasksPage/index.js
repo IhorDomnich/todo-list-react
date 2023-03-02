@@ -16,7 +16,7 @@ function TasksPage() {
       <Section
         title="Add new task"
         body={<Form />}
-        button={<FetchExampleTasksButton />}
+        extraHeaderContent={<FetchExampleTasksButton />}
       />
       <Section
         title="Search engine"
