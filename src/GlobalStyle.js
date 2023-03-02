@@ -13,6 +13,7 @@ export const GlobalStyle = createGlobalStyle`
         font-family: 'Lato', sans-serif;
         background-color: ${({ theme }) => theme.color.white};
         word-break: break-word;
+       
     }
 
     #root {
