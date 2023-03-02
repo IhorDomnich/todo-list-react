@@ -1,32 +1,26 @@
-import Form from "./Form";
-import Tasks from "./Tasks";
-import Buttons from "./Buttons";
-import Section from "./Section";
-import Header from "./Header";
-import Container from "./Container";
+import { HashRouter, Switch, Route, Redirect } from "react-router-dom";
+import Author from "./features/author/AuthorPage";
+import Tasks from "./features/tasks/tasksPage";
+import Task from "./features/tasks/tasksPage/TaskPage";
+import {toAuthor, toTasks, toTask} from "./routes";
+import Navigation from "./Navigation";
 
-const tasks = [
-  { id: 1, content: "Switch to React", done: false },
-  { id: 2, content: "eat lunch", done: true }
-];
-
-const hideDoneTasks = false;
-
-function App() {
-  return (
-    <Container>
-     <Header title="Tasks list" />
-      <Section
-        title="Add new task"
-        body={<Form />}
-      />
-      <Section
-        title="Task lisk"
-        body={<Tasks tasks={tasks} hideDoneTasks={hideDoneTasks} />}
-        extraHeaderContent={<Buttons tasks={tasks} hideDoneTasks={hideDoneTasks} />}
-      />
-    </Container>
-  );
-}
-
-export default App;
+export default () => (
+    <HashRouter>
+       <Navigation />
+            <Switch>
+                <Route path={toTask()}>
+                    <Task />
+                </Route>
+                <Route path={toTasks()}>
+                    <Tasks />
+                </Route>
+                <Route path={toAuthor()}>
+                    <Author />
+                </Route>
+                <Route>
+                    <Redirect to={toTasks()} />
+                </Route>
+            </Switch>
+    </HashRouter>
+);
