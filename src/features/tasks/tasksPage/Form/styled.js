@@ -14,6 +14,7 @@ export const StyledForm = styled.form`
 
 export const Button = styled.button`
     padding: 10px;
+    cursor: pointer;
     background: ${({ theme }) => theme.color.teal};
     color: ${({ theme }) => theme.color.white};
     border: none;

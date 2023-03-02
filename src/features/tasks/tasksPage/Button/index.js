@@ -6,6 +6,7 @@ export default styled.button`
     border: none;
     margin: 0 0 0 20px;
     transition: color 0.3s;
+    cursor: pointer;
 
     @media(max-width: ${({ theme }) => theme.breakpoint.mobileMAx}) {
         flex-basis: 100%;
